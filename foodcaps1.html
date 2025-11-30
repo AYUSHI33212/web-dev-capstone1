@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FoodieFlow — Menu & Restaurants</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="site" role="document">
+
+    <!-- Header -->
+    <header class="site-header" role="banner">
+      <a href="#" class="brand" aria-label="FoodieFlow home">
+        <div class="logo" aria-hidden="true">FF</div>
+        <div>
+          <h1>FoodieFlow</h1>
+          <div class="muted small-text">Fast delivery • Local favorites</div>
+        </div>
+      </a>
+
+      <nav class="primary" role="navigation">
+        <a href="#menu">Menu</a>
+        <a href="#restaurants">Restaurants</a>
+        <a href="#plans">Plans</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="auth">
+        <button class="btn ghost">Orders</button>
+        <button class="btn">Get Started</button>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <div class="hero">
+
+      <section class="hero-card">
+        <h2>Delicious food — delivered hot & fast</h2>
+        <p class="lead">Discover local restaurants, explore menus, filter items & enjoy fast delivery.</p>
+
+        <!-- Search -->
+        <form class="search-row">
+          <input type="search" placeholder="Search for pizza, biryani, sushi...">
+          <button type="submit">Search</button>
+        </form>
+
+        <!-- Categories -->
+        <div class="filters">
+          <button class="chip active">All</button>
+          <button class="chip">Pizza</button>
+          <button class="chip">Burgers</button>
+          <button class="chip">Indian</button>
+          <button class="chip">Desserts</button>
+          <button class="chip">Healthy</button>
+        </div>
+
+        <div class="quick-facts">
+          <div class="fact">🚚 30-40 mins</div>
+          <div class="fact">⭐ 4.8 rating</div>
+          <div class="fact">📍 8 delivery zones</div>
+        </div>
+      </section>
+
+      <!-- Cart Sidebar -->
+      <aside class="sidebar">
+        <div class="cart-summary">
+          <h3>Your order</h3>
+
+          <div class="cart-item">
+            <img src="https://images.unsplash.com/photo-1604908177522-9a3a9e10f6a8?q=80&w=800" alt="">
+            <div>
+              <strong>Veggie Supreme</strong>
+              <div class="muted small-text">Paneer, veggies, spicy mayo</div>
+            </div>
+            <div class="price">₹249</div>
+          </div>
+
+          <div class="cart-actions">
+            <div class="muted small-text">Delivery: ₹40</div>
+            <button class="btn">Checkout</button>
+          </div>
+
+          <hr>
+
+          <div class="muted small-text">Apply promo code</div>
+          <div class="promo-row">
+            <input type="text" placeholder="CODE20">
+            <button class="btn ghost">Apply</button>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Menu -->
+    <main id="menu" class="section">
+      <div class="section-head">
+        <h2>Popular this week</h2>
+        <div class="muted">Top picks from local kitchens</div>
+      </div>
+
+      <div class="menu-grid">
+
+        <article class="card">
+          <div class="media">
+            <img src="https://images.unsplash.com/photo-1606756793936-9a7f0f2e2e40?q=80&w=1400" alt="">
+          </div>
+          <h4>Margherita Pizza</h4>
+          <div class="meta">
+            <div class="muted">Thin crust • Veg</div>
+            <div class="price">₹349</div>
+          </div>
+          <div class="add-row">
+            <div class="qty"><button>−</button> <div>1</div> <button>+</button></div>
+            <button class="btn">Add</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="media">
+            <img src="https://images.unsplash.com/photo-1604908177522-9a3a9e10f6a8?q=80&w=1400" alt="">
+          </div>
+          <h4>Classic Cheese Burger</h4>
+          <div class="meta">
+            <div class="muted">Beef • With fries</div>
+            <div class="price">₹299</div>
+          </div>
+          <div class="add-row">
+            <div class="qty"><button>−</button> <div>1</div> <button>+</button></div>
+            <button class="btn">Add</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="media">
+            <img src="https://images.unsplash.com/photo-1543352634-6f7f5b4ae5b5?q=80&w=1400" alt="">
+          </div>
+          <h4>Salmon Sushi Platter</h4>
+          <div class="meta">
+            <div class="muted">8 pcs • Fresh</div>
+            <div class="price">₹699</div>
+          </div>
+          <div class="add-row">
+            <div class="qty"><button>−</button> <div>1</div> <button>+</button></div>
+            <button class="btn">Add</button>
+          </div>
+        </article>
+
+      </div>
+    </main>
+
+    <!-- Restaurants -->
+    <section id="restaurants" class="section">
+      <div class="section-head">
+        <h2>Featured restaurants</h2>
+        <div class="muted">Top-rated local kitchens</div>
+      </div>
+
+      <div class="restaurant-grid">
+        <article class="restaurant">
+          <img src="https://images.unsplash.com/photo-1541542684-2e1c4b4b5f1b?q=80&w=800" alt="">
+          <div>
+            <strong>Spice Villa</strong>
+            <div class="muted small-text">Indian • Curries</div>
+          </div>
+          <div class="rating">4.9 ★</div>
+        </article>
+
+        <article class="restaurant">
+          <img src="https://images.unsplash.com/photo-1548365328-5d7edc6b52f6?q=80&w=800" alt="">
+          <div>
+            <strong>Bella Pizza</strong>
+            <div class="muted small-text">Italian • Pizza</div>
+          </div>
+          <div class="rating">4.7 ★</div>
+        </article>
+
+        <article class="restaurant">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800" alt="">
+          <div>
+            <strong>Sushi House</strong>
+            <div class="muted small-text">Japanese • Sushi</div>
+          </div>
+          <div class="rating">4.8 ★</div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Plans -->
+    <section id="plans" class="section">
+      <div class="section-head">
+        <h2>Delivery & subscription plans</h2>
+        <div class="muted">Choose what fits you</div>
+      </div>
+
+      <div class="plans">
+        <div class="plan">
+          <h4>Pay-as-you-go</h4>
+          <div class="price">₹40 / delivery</div>
+        </div>
+
+        <div class="plan">
+          <h4>Monthly Saver</h4>
+          <div class="price">₹199 / month</div>
+        </div>
+
+        <div class="plan">
+          <h4>Family Pack</h4>
+          <div class="price">₹499 / month</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="section-head">
+        <h2>Get in touch</h2>
+        <div class="muted">Questions or partnership</div>
+      </div>
+
+      <div class="contact">
+
+        <form class="card">
+          <label>Name</label>
+          <input type="text" placeholder="Your name">
+
+          <label>Email</label>
+          <input type="email" placeholder="you@mail.com">
+
+          <label>Message</label>
+          <textarea placeholder="Tell us how we can help..."></textarea>
+
+          <button class="btn" type="submit">Send message</button>
+        </form>
+
+        <aside class="card contact-info">
+          <h3>Contact info</h3>
+          <p>Email: <strong>help@foodieflow.example</strong></p>
+          <p>Phone: <strong>+91 98XXXXXXXX</strong></p>
+        </aside>
+
+      </div>
+    </section>
+
+    <footer>
+      © 2025 FoodieFlow — All rights reserved
+    </footer>
+
+  </div>
+</body>
+</html>
